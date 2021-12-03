@@ -20,7 +20,7 @@ if you are running it in a Linux Lab machine. Please please make sure you are us
 ```bash
 ulimit -s unlimited
 ```
-Everything works fine on my device and I've tested it on USF lab server, even large graph it only takes 1-2 seconds to get answers, please leave me a comment if it doesn't really work well.
+Everything works fine on my device and I've tested it on USF lab server (-std=c++11) , even large graph it only takes 1-2 seconds to get answers, please leave me a comment if it doesn't really work well.
 
 ## Usage
 
@@ -32,7 +32,7 @@ ifstream file("input.txt");
 
 2. Then run it 
 ```bash
-./maze.exe
+./maze
 ```
 Some useful information about current graph would be shown in stdout, and if there's a path founded successfully "found it" would be shown in stdout.
 ```bash
@@ -55,7 +55,7 @@ Program tested well in Windows-based VSC and Ubuntu-based VSC and USF lab machin
 If Makefile doesn't really work well, please use the command to compile it manually, it's a simple command that shouldn't take too much time, Thank you!!
 ```bash
 ulimit -s unlimited
-g++ -o maze ./project3.cpp
+g++ -std=c++11 -o maze ./project3.cpp
 ``` 
 
 ## License
