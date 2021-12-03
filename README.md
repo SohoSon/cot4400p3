@@ -25,17 +25,27 @@ Everything works fine on my device and I've tested it on USF lab server, even la
 ## Usage
 
 
-Put inputs into input.txt
+1. Put inputs into input.txt
 ```bash
 ifstream file("input.txt");
 ```
 
-Then run it 
+2. Then run it 
 ```bash
 ./maze.exe
 ```
+Some useful information about current graph would be shown in stdout, and if there's a path founded successfully "found it" would be shown in stdout.
+```bash
+#Eg.
+column = x = 981
+rows = y = 981
+starting x = 1
+starting y = 1
+found it
+```
 
-Get results from output.txt
+
+3. Get results from output.txt
 ```bash
 outputFile.open("output.txt");
 ```
@@ -44,6 +54,7 @@ outputFile.open("output.txt");
 Program tested well in Windows-based VSC and Ubuntu-based VSC and USF lab machines.
 If Makefile doesn't really work well, please use the command to compile it manually, it's a simple command that shouldn't take too much time, Thank you!!
 ```bash
+ulimit -s unlimited
 g++ -o maze ./project3.cpp
 ``` 
 
